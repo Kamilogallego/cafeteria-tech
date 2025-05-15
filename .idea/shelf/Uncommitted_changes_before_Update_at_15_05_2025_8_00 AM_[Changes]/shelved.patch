@@ -1,0 +1,83 @@
+Index: .idea/discord.xml
+===================================================================
+diff --git a/.idea/discord.xml b/.idea/discord.xml
+deleted file mode 100644
+--- a/.idea/discord.xml	(revision 94eb1117c1a092445cda4578118548654ddeb973)
++++ /dev/null	(revision 94eb1117c1a092445cda4578118548654ddeb973)
+@@ -1,14 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="DiscordProjectSettings">
+-    <option name="show" value="ASK" />
+-    <option name="description" value="" />
+-    <option name="applicationTheme" value="default" />
+-    <option name="iconsTheme" value="default" />
+-    <option name="button1Title" value="" />
+-    <option name="button1Url" value="" />
+-    <option name="button2Title" value="" />
+-    <option name="button2Url" value="" />
+-    <option name="customApplicationId" value="" />
+-  </component>
+-</project>
+\ No newline at end of file
+Index: .idea/modules.xml
+===================================================================
+diff --git a/.idea/modules.xml b/.idea/modules.xml
+deleted file mode 100644
+--- a/.idea/modules.xml	(revision 94eb1117c1a092445cda4578118548654ddeb973)
++++ /dev/null	(revision 94eb1117c1a092445cda4578118548654ddeb973)
+@@ -1,8 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="ProjectModuleManager">
+-    <modules>
+-      <module fileurl="file://$PROJECT_DIR$/cafeteria-tech.iml" filepath="$PROJECT_DIR$/cafeteria-tech.iml" />
+-    </modules>
+-  </component>
+-</project>
+\ No newline at end of file
+Index: .idea/.gitignore
+===================================================================
+diff --git a/.idea/.gitignore b/.idea/.gitignore
+deleted file mode 100644
+--- a/.idea/.gitignore	(revision 94eb1117c1a092445cda4578118548654ddeb973)
++++ /dev/null	(revision 94eb1117c1a092445cda4578118548654ddeb973)
+@@ -1,10 +0,0 @@
+-# Default ignored files
+-/shelf/
+-/workspace.xml
+-# Editor-based HTTP Client requests
+-/httpRequests/
+-# Environment-dependent path to Maven home directory
+-/mavenHomeManager.xml
+-# Datasource local storage ignored files
+-/dataSources/
+-/dataSources.local.xml
+Index: .idea/vcs.xml
+===================================================================
+diff --git a/.idea/vcs.xml b/.idea/vcs.xml
+deleted file mode 100644
+--- a/.idea/vcs.xml	(revision 94eb1117c1a092445cda4578118548654ddeb973)
++++ /dev/null	(revision 94eb1117c1a092445cda4578118548654ddeb973)
+@@ -1,6 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="VcsDirectoryMappings">
+-    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+-  </component>
+-</project>
+\ No newline at end of file
+Index: .idea/misc.xml
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+deleted file mode 100644
+--- a/.idea/misc.xml	(revision 94eb1117c1a092445cda4578118548654ddeb973)
++++ /dev/null	(revision 94eb1117c1a092445cda4578118548654ddeb973)
+@@ -1,6 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="ProjectRootManager" version="2" languageLevel="JDK_21" default="true" project-jdk-name="graalvm-ce-21" project-jdk-type="JavaSDK">
+-    <output url="file://$PROJECT_DIR$/out" />
+-  </component>
+-</project>
+\ No newline at end of file

@@ -1,18 +1,16 @@
 package mediator;
 
-public abstract class Cajero extends ComponenteMediator {
-    @Override
-    public void recibir(String mensaje) {
-        System.out.println("Cajero: Recibió mensaje -> " + mensaje);
+public class Cajero extends UsuarioCafeteria {
+    public Cajero(String nombre, MediatorPedidos mediator) {
+        super(nombre, mediator);
+    }
+
+    public void solicitarPreparacion(String mensaje, UsuarioCafeteria barista) {
+        mediator.enviar(mensaje, barista);
     }
 
     @Override
-    public void actualizar(String mensaje) {
-        System.out.println("Cajero: Actualización -> " + mensaje);
-    }
-
-    @Override
-    public void actualizar(Pedido pedido) {
-        System.out.println("Cajero: El pedido cambió a estado -> " + pedido.getEstado());
+    public void recibirMensaje(String mensaje) {
+        System.out.println("Cajero " + nombre + " recibe: " + mensaje);
     }
 }

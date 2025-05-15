@@ -9,6 +9,6 @@ public class Cliente implements Observador {
 
     @Override
     public void actualizar(String estado) {
-        System.out.println("Cliente " + nombre + " ha sido notificado: El pedido está " + estado);
+        System.out.println("Cliente " + nombre + ": ¡Su pedido está " + estado + "!");
     }
 }
