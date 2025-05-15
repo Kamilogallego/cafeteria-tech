@@ -1,6 +1,6 @@
 package memento;
 
-public class Pedido {
+public class EstadoPedido {
     private String estado;
 
     public void setEstado(String estado) {

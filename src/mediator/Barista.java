@@ -1,6 +1,5 @@
 package mediator;
 
-
 public abstract class Barista {
     protected MediatorPedidos mediator;
 

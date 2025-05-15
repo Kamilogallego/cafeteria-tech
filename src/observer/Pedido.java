@@ -1,8 +1,6 @@
 package observer;
 
-import Memento.MementoPedido;
-import State.EstadoPedido;
-import State.EnEsperaState;
+import state.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -48,28 +46,6 @@ public class Pedido {
     private void notificarObservadores() {
         for (Observador observador : observadores) {
             observador.actualizar(getEstado());
-        }
-    }
-
-    // Métodos del patrón Memento
-    public MementoPedido crearMemento() {
-        return new MementoPedido(getEstado());
-    }
-
-    public void restaurar(MementoPedido memento) {
-        switch (memento.getEstado()) {
-            case "En espera":
-                setEstado(new EnEsperaState());
-                break;
-            case "En preparación":
-                setEstado(new State.EnPreparacionState());
-                break;
-            case "Listo":
-                setEstado(new State.ListoState());
-                break;
-            case "Entregado":
-                setEstado(new State.EntregadoState());
-                break;
         }
     }
 }
