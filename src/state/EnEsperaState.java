@@ -1,22 +1,18 @@
 package state;
 
-import observer.Pedido;
-
 public class EnEsperaState implements EstadoPedido {
-
     @Override
-    public void siguiente(Pedido pedido) {
-        System.out.println("Cambiando estado de 'En espera' a 'En preparación'.");
+    public void siguiente(PedidoContexto pedido) {
         pedido.setEstado(new EnPreparacionState());
     }
 
     @Override
     public void mostrarEstado() {
-        System.out.println("El pedido está actualmente en estado: En espera.");
+        System.out.println("Estado: En espera");
     }
 
     @Override
-    public String toString() {
+    public String getNombreEstado() {
         return "En espera";
     }
 }

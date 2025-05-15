@@ -1,19 +1,18 @@
 package state;
 
 public class EntregadoState implements EstadoPedido {
-
     @Override
-    public void siguiente(Pedido pedido) {
-        System.out.println("El pedido ya ha sido entregado. No se puede cambiar a otro estado.");
+    public void siguiente(PedidoContexto pedido) {
+        System.out.println("No hay más estados.");
     }
 
     @Override
     public void mostrarEstado() {
-        System.out.println("El pedido está actualmente en estado: Entregado.");
+        System.out.println("Estado: Entregado");
     }
 
     @Override
-    public String toString() {
+    public String getNombreEstado() {
         return "Entregado";
     }
 }

@@ -1,11 +1,16 @@
 package mediator;
 
-public abstract class Barista {
-    protected MediatorPedidos mediator;
-
-    public void setMediator(MediatorPedidos mediator) {
-        this.mediator = mediator;
+public class Barista extends UsuarioCafeteria {
+    public Barista(String nombre, MediatorPedidos mediator) {
+        super(nombre, mediator);
     }
 
-    public abstract void recibir(String mensaje);
+    public void avisarEntrega(String mensaje, UsuarioCafeteria repartidor) {
+        mediator.enviar(mensaje, repartidor);
+    }
+
+    @Override
+    public void recibirMensaje(String mensaje) {
+        System.out.println("Barista " + nombre + " recibe: " + mensaje);
+    }
 }

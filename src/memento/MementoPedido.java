@@ -1,13 +1,13 @@
 package memento;
 
 public class MementoPedido {
-    private final String estado;
+    private final String estadoGuardado;
 
     public MementoPedido(String estado) {
-        this.estado = estado;
+        this.estadoGuardado = estado;
     }
 
-    public String getEstado() {
-        return estado;
+    public String getEstadoGuardado() {
+        return estadoGuardado;
     }
 }
