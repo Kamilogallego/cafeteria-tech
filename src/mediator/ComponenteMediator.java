@@ -1,9 +1,9 @@
 package mediator;
 
 public abstract class ComponenteMediator implements Observador {
-    protected mediator.MediatorPedidos mediator;
+    protected MediatorPedidos mediator;
 
-    public void setMediator(mediator.MediatorPedidos mediator) {
+    public void setMediator(MediatorPedidos mediator) {
         this.mediator = mediator;
     }
 

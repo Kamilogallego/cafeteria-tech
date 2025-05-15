@@ -1,7 +1,5 @@
 package mediator;
 
-import observer.Pedido;
-
 public abstract class Cajero extends ComponenteMediator {
     @Override
     public void recibir(String mensaje) {
