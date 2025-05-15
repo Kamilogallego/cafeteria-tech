@@ -1,0 +1,23 @@
+src/
+├── observer/
+│   ├── Pedido.java
+│   ├── Cliente.java
+│   └── Cocina.java
+├── mediator/
+│   ├── MediatorPedidos.java
+│   ├── Cajero.java
+│   ├── Barista.java
+│   └── Repartidor.java
+├── memento/
+│   ├── Pedido.java
+│   ├── MementoPedido.java
+│   └── Caretaker.java
+├── state/
+│   ├── Pedido.java
+│   ├── EstadoPedido.java
+│   ├── EnEsperaState.java
+│   ├── EnPreparacionState.java
+│   ├── ListoState.java
+│   └── EntregadoState.java
+└── main/
+    └── Main.java
